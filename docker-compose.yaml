@@ -1,9 +1,14 @@
 version: "3.8"
 services:
   woox:
-    build: .
+    build: 
+     context: .	
     ports:
       - "8080:80"
     container_name: woox
+    volumes:
+      - "db:/var/log/apache2" 
 
 
+volumes:
+   db:

@@ -8,7 +8,5 @@ services:
     container_name: woox
     volumes:
       - "db:/var/log/apache2" 
-
-
 volumes:
    db:

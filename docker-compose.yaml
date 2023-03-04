@@ -10,3 +10,4 @@ services:
       - "db:/var/log/apache2" 
 volumes:
    db:
+   # external: true
